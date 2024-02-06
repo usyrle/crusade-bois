@@ -8,32 +8,74 @@
 </head>
 
 <body>
-    <div id="sun">
+    <div id="sun" class="starnode">
         <img src="images/nasa_goddard_sun_aphelion.png" alt="The sun">
     </div>
     <div id="system">
-        <div id="v-i" class="planet">
+        <div id="v-i" class="planet starnode">
             <img src="images/i.png" alt="Valakran I">
+            <div id="v-i-hover" class="planet-hover">
+                <p class="planet-title">Valakran I: Dead World</p>
+                <p>Mineral-rich, supports no life. Occasional visits from miners.</p>
+            </div>
         </div>
-        <div id="v-ii" class="planet">
+        <div id="v-ii" class="planet starnode">
             <img src="images/ii.png" alt="Valakran II">
+            <div id="v-ii-hover" class="planet-hover">
+                <p class="planet-title">Valakran II: Paradise World</p>
+                <p>Popular destination with Imperial nobility in Segmentum Ultima.</p>
+            </div>
         </div>
-        <div id="v-iii" class="planet">
+        <div id="v-iii" class="planet starnode">
             <img src="images/iii.png" alt="Valakran III">
+            <div id="v-iii-hover" class="planet-hover">
+                <p class="planet-title">Valakran III: Hive World</p>
+                <p>Dominated by two Hive Cities, hosts Psyker training facilities.</p>
+            </div>
         </div>
-        <div id="v-iv" class="planet">
+        <div id="v-iv" class="planet starnode">
             <img src="images/iv.png" alt="Valakran IV">
+            <div id="v-iv-hover" class="planet-hover">
+                <p class="planet-title">Valakran IV: Dead World</p>
+                <p>Covered in frozen nitrogen, unsuitable for Imperial use.</p>
+            </div>
         </div>
-        <div id="v-v" class="planet">
+        <div id="v-v" class="planet starnode">
             <img src="images/v.png" alt="Valakran V">
+            <div id="v-v-hover" class="planet-hover">
+                <p class="planet-title">Valakran V: Forge World</p>
+                <p>A failed terraforming project. One massive Hive City supporting a Manufactorum.</p>
+            </div>
         </div>
-        <div id="v-vi" class="planet">
+        <div id="v-vi" class="planet starnode">
             <img src="images/vi.png" alt="Valakran VI">
+            <div id="v-vi-hover" class="planet-hover">
+                <p class="planet-title">Valakran VI: Dead World</p>
+                <p>Stripped of resources, littered with abandoned mining sites.</p>
+            </div>
         </div>
-        <div id="v-vii" class="planet">
+        <div id="v-vii" class="planet starnode">
             <img src="images/vii.png" alt="Valakran VII">
+            <div id="v-vii-hover" class="planet-hover">
+                <p class="planet-title">Valakran VII: Death World</p>
+                <p>Inhabited by large monsters with rock-like hides. Planet occasionally causes Warp interference for
+                    astropaths.</p>
+            </div>
         </div>
     </div>
 </body>
+
+<script>
+    Array.from(document.getElementsByClassName("planet"))
+        .forEach((element) => {
+            // Hover code used then customized from https://stackoverflow.com/a/67557024
+            let specificHoverId = element.id + "-hover";
+            element.addEventListener('mousemove', () => {
+                let el = document.getElementById(specificHoverId);
+                el.style.top = event.clientY + "px";
+                el.style.left = event.clientX + "px";
+            });
+        });
+</script>
 
 </html>

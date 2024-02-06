@@ -1,8 +1,9 @@
 body {
     background-color: black;
+    color: whitesmoke;
 }
 
-#sun, .planet {
+.starnode {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,9 +11,31 @@ body {
 
 #sun {
     margin-top: -28.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .planet {
-    padding: 1.5rem;
+    padding: 1rem;
+    margin: 2rem 8rem;
+}
+
+.planet:hover > .planet-hover {
+    display: block;
+}
+
+.planet-hover {
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    display: none;
+    text-align: center;
+    text-shadow: 0 0 3px black, 0 0 5px dimgray;
+    max-width: 30%;
+    margin-left: -1rem;
+    margin-top: 1em;
+}
+
+p.planet-title {
+    font-weight: bold;
+    text-transform: uppercase;
 }
