@@ -3,39 +3,39 @@ body {
     color: whitesmoke;
 }
 
-.starnode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#sun {
-    margin-top: -28.5rem;
-    margin-bottom: 1.5rem;
-}
-
 .planet {
-    padding: 1rem;
     margin: 2rem 8rem;
+    padding: 1rem;
+}
+
+.planet-hover {
+    display: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    margin-left: -1rem;
+    margin-top: 1em;
+    max-width: 30%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 3px black, 0 0 5px dimgray;
 }
 
 .planet:hover > .planet-hover {
     display: block;
 }
 
-.planet-hover {
-    position: absolute;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1rem;
-    display: none;
-    text-align: center;
-    text-shadow: 0 0 3px black, 0 0 5px dimgray;
-    max-width: 30%;
-    margin-left: -1rem;
-    margin-top: 1em;
+.starnode {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 p.planet-title {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#sun {
+    margin-bottom: 1.5rem;
+    margin-top: -28.5rem;
 }
