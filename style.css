@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+#sun, .planet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sun {
+    margin-top: -28.5rem;
+    margin-bottom: 2rem;
+}
+
+.planet {
+    padding: 1.5rem;
+}
