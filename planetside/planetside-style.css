@@ -25,6 +25,10 @@ body {
     text-shadow: 0 0 3px black, 0 0 5px dimgray;
 }
 
+.control-info {
+    font-weight: bold;
+}
+
 .primus, .secundus, .relay {
     animation: borderglow 5s ease infinite alternate;
 }

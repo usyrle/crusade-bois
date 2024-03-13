@@ -30,6 +30,10 @@ body {
     justify-content: center;
 }
 
+.control-info {
+    font-weight: bold;
+}
+
 p.planet-title {
     font-weight: bold;
     text-transform: uppercase;
