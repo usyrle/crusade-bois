@@ -1,6 +1,8 @@
 body {
     background-color: black;
     color: whitesmoke;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
 }
 
 .planet {
@@ -10,8 +12,6 @@ body {
 
 .planet-hover {
     display: none;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1rem;
     margin-left: -1rem;
     margin-top: 1em;
     max-width: 30%;
