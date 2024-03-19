@@ -1192,17 +1192,37 @@
             Surrounded by desolate wastes, the hive teems with loyal Imperial citizens and is a common recruiting ground
             for the Astra Militarum.
         </p>
-        <p class="control-info">CONTROLLED BY:</p>
-        <p class="control-info">CONTROL EFFECT:</p>
+        <p class="control-info">CONTROLLED BY: None.</p>
+        <p class="control-info">
+            CONTROL EFFECT:
+            A "Character" unit of your choice may gain an additional 1 XP after a battle.
+            This character does not have to have participated in the battle.
+        </p>
+        <p class="control-flavor">
+            CONTROL FLAVOR:
+            Control of Valakran III gives you wide access to the entire system's resources.
+        </p>
     </div>
     <div id="hive-secundus-hover" class="hive-hover">
         <p class="info-title">Hive Secundus</p>
         <p>
             Secondary hive of Valakran III.
             Much smaller than Hive Primus, and less densely populated.
+            This hive's population has a much higher rate of mutation than Hive Primus;
+            local scholars believe the poorly-maintained shielding is to blame.
         </p>
-        <p class="control-info">CONTROLLED BY:</p>
-        <p class="control-info">CONTROL EFFECT:</p>
+        <p class="control-info">CONTROLLED BY: None.</p>
+        <p class="control-info">
+            CONTROL EFFECT:
+            Once per game, during any Shoot or Fight phase,
+            you may choose one "Infantry" unit to gain Feel No Pain 6+ for the duration of the phase.
+        </p>
+        <p class="control-flavor">
+            CONTROL FLAVOR:
+            Exposure to the irradiated wastes of Valakran III can cause temporary psychosis,
+            appearing as a "battle trance" to allies.
+            This effect can be exploited for improved battlefield performance.
+        </p>
     </div>
     <div id="psyker-relay-hover" class="hive-hover">
         <p class="info-title">Telepathic Relay</p>
@@ -1211,8 +1231,14 @@
             The astropathic choir located here has been attempting to send any communications through the Tyranid
             Shadow, with occasional success.
         </p>
-        <p class="control-info">CONTROLLED BY:</p>
-        <p class="control-info">CONTROL EFFECT:</p>
+        <p class="control-info">CONTROLLED BY: None.</p>
+        <p class="control-info">CONTROL EFFECT: Once per game, you may use the Command Re-roll strategem for 0 CP.</p>
+        <p class="control-flavor">
+            CONTROL FLAVOR:
+            The Astropathic Relay is uncommonly talented,
+            especially through the Shadow of the Warp,
+            and has a high success rate sending astropathic messages.
+        </p>
     </div>
 </body>
 
@@ -1233,35 +1259,35 @@
             });
         });
     Array.from(document.getElementsByClassName("secundus"))
-            .forEach((element) => {
-                // Hover code used then customized from https://stackoverflow.com/a/67557024
-                element.addEventListener('mousemove', () => {
-                    let el = document.getElementById("hive-secundus-hover");
-                    el.style.top = event.clientY + "px";
-                    el.style.left = event.clientX + "px";
-                    el.style.display = "block";
-                });
-
-                element.addEventListener('mouseleave', () => {
-                    let el = document.getElementById("hive-secundus-hover");
-                    el.style.display = "none";
-                });
+        .forEach((element) => {
+            // Hover code used then customized from https://stackoverflow.com/a/67557024
+            element.addEventListener('mousemove', () => {
+                let el = document.getElementById("hive-secundus-hover");
+                el.style.top = event.clientY + "px";
+                el.style.left = event.clientX + "px";
+                el.style.display = "block";
             });
+
+            element.addEventListener('mouseleave', () => {
+                let el = document.getElementById("hive-secundus-hover");
+                el.style.display = "none";
+            });
+        });
     Array.from(document.getElementsByClassName("relay"))
-            .forEach((element) => {
-                // Hover code used then customized from https://stackoverflow.com/a/67557024
-                element.addEventListener('mousemove', () => {
-                    let el = document.getElementById("psyker-relay-hover");
-                    el.style.top = event.clientY + "px";
-                    el.style.left = event.clientX + "px";
-                    el.style.display = "block";
-                });
-
-                element.addEventListener('mouseleave', () => {
-                    let el = document.getElementById("psyker-relay-hover");
-                    el.style.display = "none";
-                });
+        .forEach((element) => {
+            // Hover code used then customized from https://stackoverflow.com/a/67557024
+            element.addEventListener('mousemove', () => {
+                let el = document.getElementById("psyker-relay-hover");
+                el.style.top = event.clientY + "px";
+                el.style.left = event.clientX + "px";
+                el.style.display = "block";
             });
+
+            element.addEventListener('mouseleave', () => {
+                let el = document.getElementById("psyker-relay-hover");
+                el.style.display = "none";
+            });
+        });
 </script>
 
 </html>

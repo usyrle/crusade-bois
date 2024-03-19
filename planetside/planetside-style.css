@@ -25,10 +25,21 @@ body {
     text-shadow: 0 0 3px black, 0 0 5px dimgray;
 }
 
+.control-flavor {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 .control-info {
     font-weight: bold;
 }
 
 .primus, .secundus, .relay {
     animation: borderglow 5s ease infinite alternate;
+}
+
+#hex-map {
+    display: block;
+    margin: 0em auto;
+    max-width: 70em;
 }

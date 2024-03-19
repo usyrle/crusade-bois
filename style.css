@@ -30,6 +30,11 @@ body {
     justify-content: center;
 }
 
+.control-flavor {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 .control-info {
     font-weight: bold;
 }
